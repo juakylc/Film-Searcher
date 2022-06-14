@@ -1,0 +1,12 @@
+<div *ngIf="!loading" class="p-shadow-10 p-d-flex p-flex-column p-ai-center">
+    <p-card *ngFor="let f of films; let i=index" [header]="f.Title" [subheader]="f.Year" [style]="{width: '360px'}" styleClass="p-card-shadow" [routerLink]="['/search/film',f.imdbID]">
+        <ng-template pTemplate="header">
+            <img alt="Card" [src]="f.Poster">
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <p>
+                <small>{{f.Type}}</small>
+            </p>
+        </ng-template>
+    </p-card>
+</div>

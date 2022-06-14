@@ -1,0 +1,13 @@
+<div class="p-shadow-10">
+    <h1 class="p-text-center">Buscador por Id</h1>
+    <div class="p-text-center">
+        <div class="p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input type="text" pInputText placeholder="Search by Id" [(ngModel)]="value1">
+            <button id="search" pButton type="button" icon="pi pi-search" iconPos="right" class="p-button-icon" [routerLink]="['film',value1]"></button>        
+        </div>
+    </div>
+    <p class="p-text-center">
+        <small>Sugerencia: tt2705436</small>
+    </p>
+</div>
