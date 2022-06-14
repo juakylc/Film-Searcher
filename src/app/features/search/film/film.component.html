@@ -1,0 +1,13 @@
+<div *ngIf="!loading" class="p-shadow-10 p-d-flex p-flex-column p-ai-center">
+    <p-card [header]="film.Title" [subheader]="film.Year" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" [src]="film.Poster">
+        </ng-template>
+        <p>{{film.Plot}}</p>
+        <ng-template pTemplate="footer">
+            <p>
+                <small>{{film.Actors}}</small>
+            </p>
+        </ng-template>
+    </p-card>
+</div>

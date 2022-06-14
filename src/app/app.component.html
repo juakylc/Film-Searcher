@@ -1,0 +1,9 @@
+<p-menubar [model]="items">
+    <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input id="inputSearch" type="text" pInputText placeholder="Search" [(ngModel)]="value"> 
+        <button id="search" pButton type="button" icon="pi pi-search" iconPos="right" class="p-button-icon" [routerLink]="['search/films',value]"></button>
+    </span>
+</p-menubar>
+
+<router-outlet></router-outlet>
